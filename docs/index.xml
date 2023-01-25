@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>Copyright (c) 2023, NoBody; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Jan 2023 13:42:37 +0300</lastBuildDate>
     <atom:link href="https://nobodysargon.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2023 01 19 LVM Minihowto</title>
+      <link>https://nobodysargon.github.io/notes/posts/2023-01-19-lvm-minihowto/</link>
+      <pubDate>Wed, 25 Jan 2023 13:42:37 +0300</pubDate>
+      <guid>https://nobodysargon.github.io/notes/posts/2023-01-19-lvm-minihowto/</guid>
+      <description>&lt;p&gt;parted /dev/sda resizepart 2 100%&lt;/p&gt;
+&lt;p&gt;pvresize /dev/sda2&lt;/p&gt;
+&lt;p&gt;pvdisplay&lt;/p&gt;
+&lt;p&gt;pvchange /dev/sda2&lt;/p&gt;
+&lt;p&gt;lvextend -l +100%FREE /dev/cl/root&lt;/p&gt;
+&lt;p&gt;xfs_growfs /dev/cl/root&lt;/p&gt;
+&lt;p&gt;vgextend vg01 /dev/sdd&lt;/p&gt;
+&lt;p&gt;resize2fs /dev/vg01/lv01&lt;/p&gt;
+&lt;p&gt;mkdir /data&lt;/p&gt;
+&lt;p&gt;pvcreate /dev/sdb&lt;/p&gt;
+&lt;p&gt;vgcreate data-vg /dev/sdb&lt;/p&gt;
+&lt;p&gt;lvcreate -l+100%FREE -n data data-vg&lt;/p&gt;
+&lt;p&gt;mkfs.xfs /dev/data-vg/data&lt;/p&gt;
+&lt;p&gt;echo &amp;ldquo;/dev/mapper/data&amp;ndash;vg-data /data xfs defaults  0 1&amp;rdquo; &amp;raquo; /etc/fstab&lt;/p&gt;
+&lt;p&gt;mount /data&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

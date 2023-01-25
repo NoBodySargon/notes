@@ -12,7 +12,7 @@
 
 <meta property="og:site_name" content="Nobody stiky clips">
 <meta property="og:title" content="2023 01 19 LVM Minihowto">
-<meta property="og:url" content="https://nobodyknows.ru/posts/2023-01-19-lvm-minihowto/">
+<meta property="og:url" content="https://nobodysargon.github.io/notes/posts/2023-01-19-lvm-minihowto/">
 <meta property="og:type" content="article">
 
 <meta name="generator" content="Hugo 0.105.0">
@@ -20,11 +20,11 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="https://nobodyknows.ru/posts/2023-01-19-lvm-minihowto/">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://nobodysargon.github.io/notes/posts/2023-01-19-lvm-minihowto/">
+<link rel="apple-touch-icon" href="/notes/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/styles.de4de3d942b771bd78958bb455471994a45609a155004f8d75ade086de14d905.css">
-<link rel="stylesheet" href="/css/print.c44e36c38770a06d7a3e314d59b503dd8fadcd356b709f8673f131c88b4e684e.css" media="print">
+<link rel="stylesheet" href="/notes/css/styles.de4de3d942b771bd78958bb455471994a45609a155004f8d75ade086de14d905.css">
+<link rel="stylesheet" href="/notes/css/print.c44e36c38770a06d7a3e314d59b503dd8fadcd356b709f8673f131c88b4e684e.css" media="print">
 
 <script type="application/ld+json">
   {
@@ -33,7 +33,7 @@
     "headline": "2023 01 19 LVM Minihowto",
     "datePublished": "2023-01-25T13:42:37+03:00",
     "dateModified": "2023-01-25T13:42:37+03:00",
-    "url" : "https://nobodyknows.ru/posts/2023-01-19-lvm-minihowto/",
+    "url" : "https://nobodysargon.github.io/notes/posts/2023-01-19-lvm-minihowto/",
     "description": "parted /dev/sda resizepart 2 100% pvresize /dev/sda2 pvdisplay pvchange /dev/sda2 lvextend -l +100%FREE /dev/cl/root xfs_growfs /dev/cl/root vgextend vg01 /dev/sdd …",
     "author": {
       "@type": "Person",
@@ -41,21 +41,21 @@
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://nobodyknows.ru/"
+      "@id": "https://nobodysargon.github.io/notes/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Nobody stiky clips",
-      "url": "https://nobodyknows.ru/"
+      "url": "https://nobodysargon.github.io/notes/"
     }
   }
 </script>
 
-<script src="/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
+<script src="/notes/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
 
-<script defer src="/js/script.min.f8f04035e9a9424ebc267c1a5fdb513d79b611a04b85cab2ac414d091ac9e94c.js"></script>
+<script defer src="/notes/js/script.min.f8f04035e9a9424ebc267c1a5fdb513d79b611a04b85cab2ac414d091ac9e94c.js"></script>
 
-<script src="/js/tracking.be891c2d26ecd5915c8dccbcccf10aa81c2084a29e32c5fc28b5298c6489d1fe.js"></script>
+<script src="/notes/js/tracking.be891c2d26ecd5915c8dccbcccf10aa81c2084a29e32c5fc28b5298c6489d1fe.js"></script>
 
 
 </head>
@@ -63,7 +63,7 @@
 <body class="single-page">
 <div class="page layout__page">
 <header class="header layout__header">
-<a href="/" title="Home" rel="home" class="header__logo"><img src="/images/logo.png" alt="Home" class="header__logo-image"></a>
+<a href="/notes/" title="Home" rel="home" class="header__logo"><img src="/notes/images/logo.png" alt="Home" class="header__logo-image"></a>
 <h1 class="header__site-name">
 <a href="/" title="Home" class="header__site-link" rel="home"><span>Nobody stiky clips</span></a>
 </h1>
@@ -73,8 +73,8 @@
 
 <nav class="main-menu layout__navigation" aria-label="Main menu">
 <ul class="navbar">
-<li><a href="/">Home</a></li>
-<li><a href="/posts/" class="active" aria-current="page">Posts</a></li>
+<li><a href="/notes/">Home</a></li>
+<li><a href="/notes/posts/" class="active" aria-current="page">Posts</a></li>
 </ul>
 </nav>
 <main class="main layout__main">
@@ -83,21 +83,21 @@
 <h1 class="title ">2023 01 19 LVM Minihowto</h1>
 </header>
 <div class="content">
-<p>parted /dev/sda resizepart 2 100%
-pvresize /dev/sda2
-pvdisplay
-pvchange /dev/sda2<br>
-lvextend -l +100%FREE /dev/cl/root
-xfs_growfs /dev/cl/root</p>
-<p>vgextend vg01 /dev/sdd
-resize2fs /dev/vg01/lv01</p>
-<p>mkdir /data
-pvcreate /dev/sdb
-vgcreate data-vg /dev/sdb
-lvcreate -l+100%FREE -n data data-vg
-mkfs.xfs /dev/data-vg/data
-echo &ldquo;/dev/mapper/data&ndash;vg-data /data xfs defaults  0 1&rdquo; &raquo; /etc/fstab
-mount /data</p>
+<p>parted /dev/sda resizepart 2 100%</p>
+<p>pvresize /dev/sda2</p>
+<p>pvdisplay</p>
+<p>pvchange /dev/sda2</p>
+<p>lvextend -l +100%FREE /dev/cl/root</p>
+<p>xfs_growfs /dev/cl/root</p>
+<p>vgextend vg01 /dev/sdd</p>
+<p>resize2fs /dev/vg01/lv01</p>
+<p>mkdir /data</p>
+<p>pvcreate /dev/sdb</p>
+<p>vgcreate data-vg /dev/sdb</p>
+<p>lvcreate -l+100%FREE -n data data-vg</p>
+<p>mkfs.xfs /dev/data-vg/data</p>
+<p>echo &ldquo;/dev/mapper/data&ndash;vg-data /data xfs defaults  0 1&rdquo; &raquo; /etc/fstab</p>
+<p>mount /data</p>
 
 </div>
 
