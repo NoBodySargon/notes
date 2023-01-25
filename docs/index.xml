@@ -2,36 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nobody stiky clips</title>
-    <link>https://nobodyknows.ru/</link>
+    <link>https://nobodysargon.github.io/notes/</link>
     <description>Recent content on Nobody stiky clips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>Copyright (c) 2023, NoBody; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Jan 2023 13:42:37 +0300</lastBuildDate>
-    <atom:link href="https://nobodyknows.ru/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>2023 01 19 LVM Minihowto</title>
-      <link>https://nobodyknows.ru/posts/2023-01-19-lvm-minihowto/</link>
-      <pubDate>Wed, 25 Jan 2023 13:42:37 +0300</pubDate>
-      <guid>https://nobodyknows.ru/posts/2023-01-19-lvm-minihowto/</guid>
-      <description>&lt;p&gt;parted /dev/sda resizepart 2 100%
-pvresize /dev/sda2
-pvdisplay
-pvchange /dev/sda2&lt;br&gt;
-lvextend -l +100%FREE /dev/cl/root
-xfs_growfs /dev/cl/root&lt;/p&gt;
-&lt;p&gt;vgextend vg01 /dev/sdd
-resize2fs /dev/vg01/lv01&lt;/p&gt;
-&lt;p&gt;mkdir /data
-pvcreate /dev/sdb
-vgcreate data-vg /dev/sdb
-lvcreate -l+100%FREE -n data data-vg
-mkfs.xfs /dev/data-vg/data
-echo &amp;ldquo;/dev/mapper/data&amp;ndash;vg-data /data xfs defaults  0 1&amp;rdquo; &amp;raquo; /etc/fstab
-mount /data&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="https://nobodysargon.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

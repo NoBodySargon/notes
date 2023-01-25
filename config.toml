@@ -1,4 +1,4 @@
-baseurl = "https://nobodyknows.ru/"
+baseurl = "https://nobodysargon.github.io/notes/"
 theme = "zen"
 title = "Nobody stiky clips"
 languageCode = "ru-ru"
@@ -24,7 +24,7 @@ GoogleAnalytics = " "
 [params]
 	copyright_years = "2022-2023"
 	css_file = "/css/zen.css"
-	domain_name = "github.io"
+	domain_name = "nobodysargon.github.io"
 	personal_site = "https://nobodyknows.ru"
 
 	[params.author]
