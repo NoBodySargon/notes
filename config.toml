@@ -2,6 +2,8 @@ baseurl = "https://nobodyknows.ru/"
 theme = "zen"
 title = "Nobody stiky clips"
 languageCode = "ru-ru"
+publishDir = "docs"
+
 #disqusShortname = "nobodyknows"
 copyright = "Copyright (c) 2023, NoBody; all rights reserved."
 MetaDataFormat = "yaml"
