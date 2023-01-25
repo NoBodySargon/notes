@@ -1,3 +1,54 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "https://nobodyknows.ru/"
+theme = "zen"
+title = "Nobody stiky clips"
+languageCode = "ru-ru"
+#disqusShortname = "nobodyknows"
+copyright = "Copyright (c) 2023, NoBody; all rights reserved."
+MetaDataFormat = "yaml"
+
+# used by Hugo shortcodes
+GoogleAnalytics = " "
+
+# note that the theme expects author both here and in the
+# parameters section
+[author]
+    name = "NoBody"
+
+# used by the theme
+[indexes]
+    tag = "tags"
+    topic = "topics"
+
+[params]
+	copyright_years = "2022-2023"
+	css_file = "/css/zen.css"
+	domain_name = "github.io"
+	personal_site = "https://nobodyknows.ru"
+
+	[params.author]
+		name = "NoBody"
+		# The three quotes allow the biography to span
+		# multiple lines. Must end with three, too.
+		short_bio = """
+Что-бы не забыть.
+"""
+
+#	[params.facebook]
+#		account = "nixon.example"
+#	[params.feedburner]
+#		account = "nixon.example"
+#	[params.github]
+#		account = "nixon.example"
+#	[params.googleplus]
+#		account = ""
+#	[params.linkedin]
+#		account = "nixon.example"
+#		source  = "nixon.example"
+#	[params.twitter]
+#		account = "nixon.example"
+#	[params.slideshare]
+#		account = "nixon.example"
+
+	[params.license]
+#		url = "http://creativecommons.org/licenses/by/3.0/"
+		attribution = "Some rights reserved"

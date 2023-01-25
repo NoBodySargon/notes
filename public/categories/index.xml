@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Nobody stiky clips</title>
+    <link>https://nobodyknows.ru/categories/</link>
+    <description>Recent content in Categories on Nobody stiky clips</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>Copyright (c) 2023, NoBody; all rights reserved.</copyright>
+    <atom:link href="https://nobodyknows.ru/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
